@@ -24,9 +24,6 @@ export class ApiInfo extends BaseComponent implements OnInit {
   init() {
     this.info = this.componentSchema.info;
     this.specUrl = this.optionsService.options.specUrl;
-    if (!isNaN(parseInt(this.info.version.toString().substring(0, 1)))) {
-      this.info.version = 'v' + this.info.version;
-    }
   }
 
   ngOnInit() {

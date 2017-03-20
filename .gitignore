@@ -30,7 +30,6 @@ lib/**/*.css.shim.ts
 lib/**/*.shim.ngstyle.ts
 
 # other
-/dist
 /demo/build
 .tmp
 compiled

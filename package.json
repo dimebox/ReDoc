@@ -17,7 +17,7 @@
     "lint": "tslint -e \"lib/**/*{ngfactory|css.shim}.ts\" lib/**/*.ts",
     "unit": "karma start",
     "e2e": "npm run build:prod && npm run e2e-copy && npm run webdriver && protractor",
-    "deploy": "node ./build/prepare_deploy.js && deploy-to-gh-pages --update demo",
+    "deploy": "node ./build/prepare_deploy.js",
     "ngc": "ngc -p tsconfig.webpack.json",
     "clean:dist": "npm run rimraf -- dist/",
     "clean:aot": "npm run rimraf -- .tmp compiled lib/**/*.css",
